@@ -1,0 +1,15 @@
+{
+  "name": "angular-slick-slider",
+  "version": "1.0.0",
+  "authors": [
+    "Shaba Abhiram <shabarivas@gmail.com>"
+  ],
+  "description": "A simple slider directive, [min, max, default]",
+  "main": "slider.js",
+  "keywords": [
+    "angularjs",
+    "slider"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/sabhiram/angular-slick-slider"
+}
