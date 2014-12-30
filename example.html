@@ -14,6 +14,23 @@
         <div class="row"><h1>Slick Slider Sample</h1></div>
         <hr>
 
+        <div class="row" style="background-color: rgb({{settings.red}}, {{settings.green}}, {{settings.blue}});">
+            <sab-slick-slider
+                value = "settings.red"
+                min = "0" max = "255" default = "255"> Red
+            </sab-slick-slider>
+
+            <sab-slick-slider
+                value = "settings.green"
+                min = "0" max = "255" default = "255"> Green
+            </sab-slick-slider>
+
+            <sab-slick-slider
+                value = "settings.blue"
+                min = "0" max = "255" default = "255"> Blue
+            </sab-slick-slider>
+        </div>
+
     </div>
 
 
@@ -25,7 +42,11 @@
         var app = angular.module('SampleSlider', ['sabhiram.slick-slider']);
 
         app.controller('MainController', function ($scope) {
-            console.log("Hello!");
+            $scope.settings = {
+                red  : 50,
+                green: 50,
+                blue : 50
+            };
         });
     </script>
 
