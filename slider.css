@@ -1,0 +1,96 @@
+.sab-slider-container {
+    width: 100%;
+    height: 40px;
+    position: relative;
+    margin-bottom: 15px;
+}
+.sab-slider-container * {
+    float: left;
+}
+.sab-slider-name-container {
+    position: absolute;
+    height: 24px;
+    width: 30%;
+    top: 8px; left: 0;
+    line-height: 24px;
+    overflow: hidden;
+    font-size: 14pt;
+}
+.sab-slider-name,
+.sab-slider-value {
+    position: absolute;
+    width: 100%; height: 100%;
+    top: 0;
+    left: 10px;
+    opacity: 1;
+    -webkit-transition: all 0.30s linear 0.0s;
+}
+.sab-slider-name.underfocus,
+.sab-slider-value.underfocus {
+    top: -100%;
+    opacity: 0;
+}
+.sab-slider-value-reset {
+    font-size: 11pt;
+    color: #999999;
+    cursor: pointer;
+}
+.sab-slider-input-container {
+    position: absolute;
+    height: 21px;
+    top: 10px; left: 30%;
+    right: 0;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.sab-slider-min,
+.sab-slider-max {
+    color: #999999;
+    position: absolute;
+    top: 32px;
+    width: auto;
+}
+.sab-slider-min {
+    left: 28%;
+}
+.sab-slider-max {
+    right: 0%;
+}
+
+.sab-slider-input {
+    position: absolute;
+    top: 4px;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+input[type="range"] {
+    margin-top: 5px;
+    -webkit-appearance: none;
+    background-color: #999999;
+    height: 4px;
+    -webkit-transition: all 0.30s linear 0.0s;
+    cursor: pointer;
+}
+input[type="range"]:hover, input[type="range"]:focus,
+input[type="range"]:active {
+    background-color: #ffffff;
+}
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    position: relative;
+    top: 0px; z-index: 1;
+    width: 28px; height: 28px;
+    cursor: pointer;
+    border-radius: 100%;
+    background-color: #000000;
+    border: 3px solid #999999;
+    color: #ffffff;
+}
+input[type="range"]::-webkit-slider-thumb:hover,
+input[type="range"]::-webkit-slider-thumb:focus {
+    -webkit-transition: all 0.30s linear 0.0s;
+    background-color: #ffffff;
+    border: 2px solid #ffffff;
+    color: #000000;
+}

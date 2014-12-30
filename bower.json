@@ -10,6 +10,14 @@
     "angularjs",
     "slider"
   ],
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "dependencies": {
+    "angular": "~1.0.6"
+  },
   "license": "MIT",
   "homepage": "https://github.com/sabhiram/angular-slick-slider"
 }
