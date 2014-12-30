@@ -29,8 +29,9 @@ angular.module("sabhiram.slick-slider", []).
                 "</div>",
             ].join("\n"),
             link: function(scope, element, attributes) {
-                scope.min = parseInt(scope.min, 10) || 0;
-                scope.max = parseInt(scope.min, 10) || 100;
+                console.log("Linking directive: value is: ", + scope.value);
+                scope.min     = parseInt(scope.min, 10) || 0;
+                scope.max     = parseInt(scope.min, 10) || 100;
                 scope.default = parseInt(scope.default, 10) || 50;
             }
         };
