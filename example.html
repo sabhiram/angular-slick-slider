@@ -14,8 +14,11 @@
 
         <div class="row"><h1>Slick Slider Sample</h1></div>
         <hr>
+        <br>
 
-        <div class="row" style="background-color: rgb({{settings.red}}, {{settings.green}}, {{settings.blue}});">
+        <div class="row" style="background-color: rgb({{settings.red}}, {{settings.green}}, {{settings.blue}});"><h3>0 -> Value Sliders</h3></div>
+        <hr>
+        <div class="row">
             <sab-slick-slider
                 value = "settings.red"
                 min = "0" max = "255" default = "255"> Red
@@ -31,6 +34,17 @@
                 min = "0" max = "255" default = "255"> Blue
             </sab-slick-slider>
         </div>
+        <br>
+
+        <div class="row"><h3>Arbitary ranges! [current = {{ settings.nested.foobar }}]</h3></div>
+        <hr>
+        <div class="row">
+            <sab-slick-slider
+                value = "settings.nested.foobar"
+                min = "-108" max = "273" default = "0"> Foobar
+            </sab-slick-slider>
+        </div>
+        <br>
 
     </div>
 
@@ -44,9 +58,13 @@
 
         app.controller('MainController', function ($scope) {
             $scope.settings = {
-                red  : 50,
-                green: 50,
-                blue : 50
+                red  : 255,
+                green: 255,
+                blue : 255,
+
+                nested: {
+                    foobar: 0
+                }
             };
         });
     </script>
