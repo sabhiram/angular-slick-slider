@@ -32,10 +32,7 @@ module.directive("sabSlickSlider", function() {
             scope.min     = parseInt(scope.min, 10) || 0;
             scope.max     = parseInt(scope.max, 10) || 100;
             scope.default = parseInt(scope.default, 10) || 50;
-
-            if (typeof(scope.val) == "undefined") {
-                scope.val = scope.default;
-            }
+            scope.val     = parseInt(scope.val, 10) || scope.default;
         }
     };
 });
