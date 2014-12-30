@@ -32,7 +32,6 @@ module.directive("sabSlickSlider", function() {
             scope.min     = parseInt(scope.min, 10) || 0;
             scope.max     = parseInt(scope.min, 10) || 100;
             scope.default = parseInt(scope.default, 10) || 50;
-            console.log("Linking directive: value is: ", + scope.value);
         }
     };
 });
