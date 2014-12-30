@@ -28,11 +28,14 @@ angular.module("sabhiram.slick-slider", []).
                 "    </div>",
                 "</div>",
             ].join("\n"),
-            link: function(scope, element, attributes) {
-                console.log("Linking directive: value is: ", + scope.value);
+            controller: function(scope, element) {
+                console.log("Controller directive: value is: ", + scope.value);
                 scope.min     = parseInt(scope.min, 10) || 0;
                 scope.max     = parseInt(scope.min, 10) || 100;
                 scope.default = parseInt(scope.default, 10) || 50;
+            },
+            link: function(scope, element, attributes) {
+                console.log("Linking directive: value is: ", + scope.value);
             }
         };
     });
