@@ -36,8 +36,6 @@ module.directive("sabSlickSlider", function() {
             if (typeof(scope.val) == "undefined") {
                 scope.val = scope.default;
             }
-
-            scope.val = scope.val + 1;
         }
     };
 });
