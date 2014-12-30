@@ -24,7 +24,7 @@ module.directive("sabSlickSlider", function() {
             "    <div class='sab-slider-min'>{{min}}</div>",
             "    <div class='sab-slider-max'>{{max}}</div>",
             "    <div class='sab-slider-input-container'>",
-            "        <input class='sab-slider-input' ng-model='val' type='range' min='{{min}}' max='{{max}}'></input>",
+            "        <input class='sab-slider-input' ng-model='val' value='val' type='range' min='{{min}}' max='{{max}}'></input>",
             "    </div>",
             "</div>",
         ].join("\n"),
