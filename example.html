@@ -47,7 +47,7 @@
         <div class="row">
             <sab-slick-slider
                 value = "settings.nested.foobar"
-                min = "-108" max = "273" default = "0"> Foobar
+                min = "-200" max = "200" default = "0"> Foobar
             </sab-slick-slider>
         </div>
         <br>
@@ -62,15 +62,16 @@
         app.controller('MainController', function ($scope) {
             $scope.settings = {
                 colors: {
-                    red  : 255,
-                    green: 255,
-                    blue : 255
+                    red  : 100,
+                    green: 200,
+                    blue : 250
                 },
 
                 nested: {
                     foobar: 0
                 }
             };
+            console.log("\nController loaded: " + $scope.settings);
         });
     </script>
 

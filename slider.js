@@ -29,9 +29,15 @@ module.directive("sabSlickSlider", function() {
             "</div>",
         ].join("\n"),
         link: function(scope, element, attributes) {
+            console.log("\nLink started: " + scope.value);
             scope.min     = parseInt(scope.min, 10) || 0;
             scope.max     = parseInt(scope.min, 10) || 100;
             scope.default = parseInt(scope.default, 10) || 50;
+
+            if (typeof(scope.value) == "undefined") {
+                scope.value = scope.default;
+            }
+            console.log("Link complete: " + scope.value);
         }
     };
 });
