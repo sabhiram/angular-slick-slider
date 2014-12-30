@@ -30,7 +30,7 @@ module.directive("sabSlickSlider", function() {
         ].join("\n"),
         link: function(scope, element, attributes) {
             scope.min     = parseInt(scope.min, 10) || 0;
-            scope.max     = parseInt(scope.min, 10) || 100;
+            scope.max     = parseInt(scope.max, 10) || 100;
             scope.default = parseInt(scope.default, 10) || 50;
 
             if (typeof(scope.val) == "undefined") {
