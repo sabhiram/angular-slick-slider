@@ -58,20 +58,20 @@
     <script src="slider.js"></script>
     <script>
         var app = angular.module('SampleSlider', ['sabhiram.slick-slider']);
+        app.controller('MainController', function ($scope, $timeout) {
+            $timeout(function() {
+                $scope.settings = {
+                    colors: {
+                        red  : 100,
+                        green: 200,
+                        blue : 250
+                    },
 
-        app.controller('MainController', function ($scope) {
-            $scope.settings = {
-                colors: {
-                    red  : 100,
-                    green: 200,
-                    blue : 250
-                },
-
-                nested: {
-                    foobar: -78
-                }
-            };
-            console.log("\nController loaded: " + $scope.settings);
+                    nested: {
+                        foobar: -78
+                    }
+                };
+            });
         });
     </script>
 
