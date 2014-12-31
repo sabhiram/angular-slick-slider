@@ -1,5 +1,22 @@
 "use strict";
 
+
+/******************************************************************************\
+Directive:
+    sabSlickSlider <sab-slick-slider>
+
+Dependencies:
+    None
+
+Inputs:
+    =value   - value to bind this slider to
+    @min     - min value
+    @max     - max value
+    @default - default, if source is undefined
+
+Description:
+    Slider directive
+\******************************************************************************/
 var module = angular.module("sabhiram.slick-slider", []);
 module.directive("sabSlickSlider", function() {
     return {
