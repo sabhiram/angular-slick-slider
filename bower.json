@@ -1,6 +1,6 @@
 {
   "name": "angular-slick-slider",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "authors": [
     "Shaba Abhiram <shabarivas@gmail.com>"
   ],
@@ -13,7 +13,10 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "bower_components"
+    "bower_components",
+    ".gitignore",
+    "README.md",
+    "example.html"
   ],
   "dependencies": {
   },
