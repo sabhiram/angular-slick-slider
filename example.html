@@ -52,6 +52,21 @@
         </div>
         <br>
 
+        <div class="row"><h3>With Steps!</h3></div>
+        <hr>
+        <div class="row">
+            <sab-slick-slider
+                value = "settings.steps.default"
+                min = "0" max = "200" default = "0" step = "1"> Default to 1
+            </sab-slick-slider>
+
+            <sab-slick-slider
+                value = "settings.steps.custom"
+                min = "0" max = "200" default = "0" step = "50"> Custom (50)
+            </sab-slick-slider>
+        </div>
+        <br>
+
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.3.8/angular.min.js"></script>
@@ -69,6 +84,11 @@
 
                     nested: {
                         foobar: -78
+                    },
+
+                    steps: {
+                        default: 0,
+                        custom: 0
                     }
                 };
             });
