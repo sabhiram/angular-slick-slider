@@ -25,6 +25,7 @@ module.directive("sabSlickSlider", function() {
             val: "=value",
             min: "@",
             max: "@",
+            step: "@",
             default: "@"
         },
         replace: true,
@@ -41,13 +42,14 @@ module.directive("sabSlickSlider", function() {
             "    <div class='sab-slider-min'>{{min}}</div>",
             "    <div class='sab-slider-max'>{{max}}</div>",
             "    <div class='sab-slider-input-container'>",
-            "        <input class='sab-slider-input' ng-model='val' value='{{val}}' type='range' min='{{min}}' max='{{max}}'></input>",
+            "        <input class='sab-slider-input' ng-model='val' value='{{val}}' type='range' min='{{min}}' max='{{max}}' step='{{step}}'></input>",
             "    </div>",
             "</div>",
         ].join("\n"),
         link: function(scope, element, attributes) {
             scope.min     = parseInt(scope.min, 10) || 0;
             scope.max     = parseInt(scope.max, 10) || 100;
+            scope.step    = parseInt(scope.min, 10) || 1;
             scope.default = parseInt(scope.default, 10) || 50;
             scope.val     = parseInt(scope.val, 10) || scope.default;
         }
